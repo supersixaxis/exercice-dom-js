@@ -27,7 +27,6 @@ let isMovedRight = false;
 let isMovedTop = false;
 
 moveSquare.addEventListener('click', (e) => {
-    console.log(e.target)
     if (!isMovedDown){
         square.style.position = "absolute"
         square.style.bottom = "400px"
