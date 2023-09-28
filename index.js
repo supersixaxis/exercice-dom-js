@@ -6,7 +6,8 @@ let carre = document.getElementById('carre')
 let cube = document.getElementById('cube')
 let square = document.getElementById('square')
 let moveSquare = document.getElementById('moveSquare')
-
+let titreGalerie = document.getElementById('galerie')
+titreGalerie.style.marginTop = '100px'
 model.addEventListener('input', (e) => {
 copie.value = e.target.value
 });
@@ -29,7 +30,7 @@ let isMovedLeft = false;
 moveSquare.addEventListener('click', (e) => {
     if (!isMovedDown){
         square.style.position = "absolute"
-        square.style.bottom = "200px"
+        square.style.bottom = "250px"
         isMovedDown = true
     } else if (!isMovedRight){
         square.style.position = "absolute"
@@ -37,7 +38,7 @@ moveSquare.addEventListener('click', (e) => {
         isMovedRight = true
     } else if (!isMovedTop){
         square.style.position = "absolute"
-        square.style.top = "400px"
+        square.style.top = "350px"
         isMovedTop = true
     }else if (!isMovedLeft){
         square.style.left = "10px"
@@ -53,3 +54,4 @@ moveSquare.addEventListener('click', (e) => {
     }
 
 })
+
