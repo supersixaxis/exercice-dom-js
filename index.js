@@ -7,11 +7,11 @@ let cube = document.getElementById('cube')
 let square = document.getElementById('square')
 let moveSquare = document.getElementById('moveSquare')
 
-model.addEventListener('change', (e) => {
+model.addEventListener('input', (e) => {
 copie.value = e.target.value
 });
 
-numberInput.addEventListener('change', (e) => {
+numberInput.addEventListener('input', (e) => {
     number.textContent = e.target.value
     carre.textContent = e.target.value * 10
     cube.textContent = e.target.value * 100
